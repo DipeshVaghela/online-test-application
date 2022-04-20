@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<app-welcome
+  (startTest)="startTest($event)"
+  *ngIf="testStatus == 0"
+></app-welcome>
+
+<app-test-window
+  *ngIf="testStatus == 1"
+  (finishTest)="finishTest($event)"
+></app-test-window>
+
+<app-test-result
+  *ngIf="testStatus == 2"
+  [testResult]="testResult"
+  (goToHome)="goToHome()"
+  (retryTest)="retryTest($event)"
+></app-test-result>

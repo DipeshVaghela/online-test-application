@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h2>Question {{ i + 1 }}</h2>
+  <hr class="divider" />
+
+  <p>{{ question.question }}</p>
+
+  <div class="options-div">
+    <div *ngFor="let opt of question.options" class="option">
+      <div
+        (click)="selectOption(opt)"
+        [ngClass]="{ 'selected-option': selectedOption == opt }"
+      >
+        {{ opt }}
+      </div>
+    </div>
+  </div>
+</div>

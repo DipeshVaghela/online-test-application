@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="main-div">
+    <h2>Test Result</h2>
+    <div class="details">
+      <div class="row">
+        <span>Fullname :</span>
+        <span>{{ testResult.fullName }}</span>
+      </div>
+      <div class="row">
+        <span>Score :</span>
+        <span>{{ testResult.score }} out of 20</span>
+      </div>
+      <div class="row">
+        <span>Time Taken :</span>
+        <span>{{ testResult.timeTaken }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="home" (click)="goToTheHome()">Home</button>
+    <button class="retry" (click)="retryTheTest()">Retry</button>
+  </div>
+</div>

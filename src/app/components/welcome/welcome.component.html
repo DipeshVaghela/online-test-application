@@ -1,0 +1,51 @@
+<div class="main-div">
+  <!-- Exam rules -->
+  <div class="exam-rules">
+    <!-- Rules -->
+    <div class="rules">
+      <h2>Test Rules</h2>
+      <div class="rule" *ngFor="let rule of rules">
+        <img
+          src="../../../assets/img/circle-question-regular.svg"
+          alt="non found"
+        />
+        <span>{{ rule }}</span>
+      </div>
+    </div>
+    <!-- Img -->
+    <div class="img">
+      <img src="../../../assets/img/online-test.png" alt="" />
+    </div>
+  </div>
+
+  <!-- Exam Pattern -->
+  <div class="exam-pattern">
+    <!-- Pattern -->
+    <div class="patterns">
+      <h2>Test Pattern</h2>
+      <div class="pattern" *ngFor="let pat of examPattern">
+        <img src="../../../assets/img/hash.svg" alt="non found" />
+        <span>{{ pat }}</span>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+      <input
+        type="text"
+        name="fullName"
+        id="fullName"
+        placeholder="Enter fullname"
+        [(ngModel)]="fullName"
+        autocomplete="off"
+      />
+      <button
+        (click)="startTheTest()"
+        [ngClass]="{ 'disable-btn': fullName.length <= 8 }"
+      >
+        Start Test
+      </button>
+      <span>Fullname length must be more than 8 character</span>
+    </div>
+  </div>
+</div>

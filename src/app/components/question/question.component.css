@@ -1,0 +1,50 @@
+.wrapper {
+  min-height: 50vh;
+  position: relative;
+  margin-bottom: 1em;
+}
+.divider {
+  height: 1px;
+  border: none;
+  margin: 1em 0em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.25;
+}
+
+.option {
+  width: 50%;
+  display: inline-block;
+}
+.option > div {
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+}
+.option > div.selected-option {
+  background-color: rgb(209, 231, 239);
+  border: 2px solid rgb(15, 15, 156);
+}
+.option > div:hover,
+.option > div:focus {
+  border: 2px solid rgb(15, 15, 156);
+}
+
+@media all and (max-width: 800px) {
+  .wrapper > h2 {
+    font-size: 1.25em;
+  }
+
+  .option {
+    width: 100%;
+    font-size: 0.9em;
+  }
+}

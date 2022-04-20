@@ -1,0 +1,175 @@
+.main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5% 5%;
+}
+
+.exam-rules {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules {
+  width: 60%;
+}
+.rules > h2 {
+  margin-bottom: 1em;
+}
+.rules > .rule {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+.rule > img {
+  width: 1em;
+  aspect-ratio: 1;
+  margin-right: 1em;
+}
+.img {
+  width: 40%;
+}
+.img > img {
+  max-width: 100%;
+}
+
+.exam-pattern {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5%;
+}
+
+.patterns {
+  width: 60%;
+}
+.patterns > h2 {
+  margin-bottom: 1em;
+}
+.patterns > .pattern {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+.pattern > img {
+  width: 1em;
+  aspect-ratio: 1;
+  margin-right: 1em;
+}
+.form {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.form > input {
+  border: none;
+  width: 60%;
+  padding: 1em;
+  color: #000000;
+  font-weight: 500;
+  outline: none;
+  font-size: 1em;
+  z-index: 1;
+  border: 2px solid rgb(7, 230, 255);
+  transition: all 0.25s ease-in-out;
+}
+.form > input:focus {
+  border: 2px solid rgb(10, 143, 245);
+}
+.form > button {
+  border: none;
+  background-color: rgb(10, 143, 245);
+  border: 2px solid rgb(10, 143, 245);
+  padding: 1em 1em;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+.form > button.disable-btn {
+  transform: translateX(-100%);
+}
+.form > span {
+  position: absolute;
+  top: 5em;
+  font-size: 0.8em;
+}
+
+@media all and (max-width: 800px) {
+  .exam-rules {
+    flex-direction: column;
+  }
+  .rules {
+    order: 1;
+    width: 90%;
+    margin-top: 2em;
+  }
+  .rules > h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .rules > .rule {
+    width: 100%;
+    font-size: 0.75em;
+  }
+  .img {
+    order: 0;
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam-pattern {
+    flex-direction: column;
+  }
+  .patterns {
+    width: 90%;
+    margin-top: 2em;
+  }
+  .patterns > h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .patterns > .pattern {
+    width: 100%;
+    font-size: 0.75em;
+  }
+
+  .form {
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .form > input {
+    width: 60%;
+    font-size: 0.8em;
+  }
+
+  .form > button {
+    font-size: 0.8em;
+  }
+  .form > button.disable-btn {
+    transform: translateX(-100%);
+  }
+  .form > span {
+    top: 5em;
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,79 @@
+<div class="wrapper">
+  <!--  -->
+  <!-- Main Division that has shadow -->
+  <div class="main-div">
+    <!--  -->
+    <!-- question div div contain question area and status -->
+    <div class="que-div">
+      <div class="que-div-area">
+        <ng-container *ngFor="let question of questions; let i = index">
+          <app-question
+            [question]="question"
+            [i]="i"
+            [hidden]="activeQuestionNo !== i + 1"
+            (isCorrect)="isCorrect($event)"
+            [answered]="getAnsweredStatus(i)"
+          ></app-question>
+        </ng-container>
+
+        <div class="actions">
+          <button
+            class="prevBtn"
+            tabindex="-1"
+            (click)="goToPreviousQue()"
+            [ngClass]="{ 'disabled-btn': activeQuestionNo == 1 }"
+          >
+            Previous
+          </button>
+          <button
+            class="nextBtn"
+            tabindex="-1"
+            (click)="goToNextQue()"
+            [ngClass]="{ 'disabled-btn': activeQuestionNo == 20 }"
+          >
+            Next
+          </button>
+          <button
+            class="clearBtn"
+            tabindex="-1"
+            (click)="clearSelection(activeQuestionNo - 1)"
+          >
+            Clear Selection
+          </button>
+          <button class="submitBtn" tabindex="-1" (click)="submit()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status of test -->
+    <div class="status">
+      <h2>Time Left</h2>
+
+      <!-- Time division -->
+      <div class="time-div" [ngClass]="{ red: getTimerMinute() == '00' }">
+        <div class="dial">
+          <span>{{ getTimerMinute() }}</span>
+          <p>minutes</p>
+        </div>
+        <div class="dial">
+          <span>{{ getTimerSecond() }}</span>
+          <p>seconds</p>
+        </div>
+      </div>
+
+      <h3>Questions</h3>
+      <div class="que-status-area">
+        <div
+          class="que-status-div"
+          *ngFor="let que of resultArray; let i = index"
+          (click)="goToQuestion(i)"
+          [ngClass]="{ answered: isAnswered(i) }"
+        >
+          {{ i + 1 }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
