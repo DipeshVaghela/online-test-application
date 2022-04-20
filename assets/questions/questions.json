@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Which organization defines Web standards ?",
+    "options": [
+      "Apple Inc.",
+      "IBM Corporation",
+      "World Wide Web Consortium",
+      "Microsoft Corporation"
+    ],
+    "answer": "World Wide Web Consortium"
+  },
+  {
+    "question": "HTML is considered as ______ ?",
+    "options": [
+      "Programming language",
+      "OOP language",
+      "High level language",
+      "Markup language"
+    ],
+    "answer": "Markup language"
+  },
+  {
+    "question": "HTML uses ______ ?",
+    "options": [
+      "User-defined tags",
+      "Predefined tags",
+      "Fixed tags defined by the language",
+      "Tags for links only"
+    ],
+    "answer": "Fixed tags defined by the language"
+  },
+  {
+    "question": "HTML was first proposed in ___ .",
+    "options": ["1980", "1990", "1995", "2000"],
+    "answer": "1990"
+  },
+  {
+    "question": "Which of the following is not a browser ?",
+    "options": ["Mozilla Firefox", "Netscape", "Microsoft Bing", "Opera"],
+    "answer": "Microsoft Bing"
+  },
+  {
+    "question": "Who is the main author of the HTML ?",
+    "options": [
+      "Brendan Eich",
+      "Tim Berners-Lee",
+      "Web developer",
+      "Google Inc"
+    ],
+    "answer": "Tim Berners-Lee"
+  },
+  {
+    "question": "If we want to set the style for just one element, which css selector will we use ?",
+    "options": ["Design", "Style", "Modify", "Define"],
+    "answer": "Style"
+  },
+  {
+    "question": "Which of the following CSS framework is used to create a responsive design ?",
+    "options": ["django", "rails", "larawell", "bootstrap"],
+    "answer": "bootstrap"
+  },
+  {
+    "question": "The HTML standard which does not require double quotes around the values of an attribute is called ______ ?",
+    "options": ["HTML 1", "HTML 3", "HTML 5", "HTML 7"],
+    "answer": "HTML 5"
+  },
+  {
+    "question": " A stricter type of HTML document is known as ______ ?",
+    "options": ["DHTML", "XHTML", "XML", "HTML"],
+    "answer": "XHTML"
+  },
+  {
+    "question": " An HTML document can contain _____",
+    "options": ["Attributes", "Tags", "Raw text", "All the answers are true"],
+    "answer": "All the answers are true"
+  },
+
+  {
+    "question": " A page designed in HTML is called _____",
+    "options": ["Application", "Cover page", "Front-end", "Web Page"],
+    "answer": "Web Page"
+  },
+  {
+    "question": " An HTML document is saved with the ____ extension.",
+    "options": [".htl", ".html", ".hml", ".htnl"],
+    "answer": ".html"
+  },
+  {
+    "question": " The HTML document contains a root tag called ____",
+    "options": ["HEAD", "Title", "Body", "HTML"],
+    "answer": "HTML"
+  },
+  {
+    "question": " If we want to place text around an image, which CSS property should we use ?",
+    "options": ["push", "float", "align", "wrap"],
+    "answer": "float"
+  },
+  {
+    "question": " Which of the following protocols is not used on the Internet ?",
+    "options": ["Gopher", "HTTP", "WIRL", "Telnet"],
+    "answer": "WIRL"
+  },
+  {
+    "question": " Suppose we want to arrange three DIVs so that DIV 3 is placed above DIV1. Now, which CSS property are we going to use to control the stack order ?",
+    "options": ["d-index", "s-index", "x-index", "z-index"],
+    "answer": "z-index"
+  },
+  {
+    "question": " Which element is used in <HEAD> of an HTML/XHTML page, if we want to use an external CSS to decorate the page ?",
+    "options": ["<src>", "<link>", "<style>", "<css>    "],
+    "answer": "<link>"
+  },
+  {
+    "question": " Choose the correct HTML tag for a large title.",
+    "options": ["H1", "Heading", "Head", "H6"],
+    "answer": "H1"
+  },
+  {
+    "question": " If we want to use a nice green dotted border around an image, which css property are we going to use ?",
+    "options": [
+      "border-line",
+      "border-style",
+      "border-decoration",
+      "border-color"
+    ],
+    "answer": "border-color"
+  }
+]
