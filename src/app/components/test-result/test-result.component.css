@@ -80,14 +80,14 @@
   }
 
   .main-div > h2 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .row {
     width: 90%;
   }
   .row > span {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .actions > button {
@@ -108,7 +108,7 @@
     width: 70%;
   }
   .row > span {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .actions > button {
     font-size: 0.9em;

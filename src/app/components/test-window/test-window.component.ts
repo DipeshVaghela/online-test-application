@@ -115,6 +115,7 @@ export class TestWindowComponent implements OnInit {
   // submit the test
   submit() {
     this.timerService.stopTimer();
+    this.testService.resetAllAnsweredStatus();
     this.countScore();
     this.finishTest.emit({
       score: this.score,
